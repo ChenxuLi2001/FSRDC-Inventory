@@ -15,6 +15,12 @@ format.
 - `codes/` - Python scripts for collecting and processing data.
 - `docs/` - Documentation and resources.
 
+## Code Descriptions
+- `fetch_crossref.py` - Collect 500 related papers from Crossref API website.
+- `fetch_google.py` - Collect 500 related papers from Google Scholar.
+- `merge_data.py` - Merge the two generated datasets to get a more complete dataset containing papers from both sources.
+- `visualization.py` - Visualize the collected data for future analysis.
+
 ## How to Operate
 1. Run the "codes/fetch_crossref.py" and "codes/fetch_google.py".
 2. Run the "codes/merge_data.py" and generate the final dataset.
