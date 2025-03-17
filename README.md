@@ -1,4 +1,5 @@
 # FSRDC-Inventory
+**GitHub Pages Landing Page**: [Click here](https://chenxuli2001.github.io/FSRDC-Research-Inventory/)
 This project collects and visualizes research outputs from the FSRDC program.
 
 ## Project Goals
