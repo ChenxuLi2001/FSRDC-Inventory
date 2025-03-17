@@ -4,7 +4,6 @@ import seaborn as sns
 
 # Read the CSV data files
 df = pd.read_csv("data/merged_data.csv")
-google_df = pd.read_csv("data/google_data.csv")
 
 # Set the graph style
 sns.set_theme(style="whitegrid")
@@ -32,7 +31,7 @@ plt.savefig("data/Containers.png")
 plt.show()
 
 # Figure of DOI proportion statistics based on Google Scholar
-has_doi = google_df["DOI"].apply(lambda x: isinstance(x, str) and "N/A" not in x and bool(x)).value_counts()
+has_doi = df["DOI"].apply(lambda x: isinstance(x, str) and "N/A" not in x and bool(x)).value_counts()
 plt.figure(figsize=(6, 6))
 plt.pie(has_doi, labels=["Has DOI", "No DOI"], autopct="%1.1f%%", colors=["#4CAF50", "#FF5733"])
 plt.title("DOI proportion statistics based on Google Papers")
